@@ -1,0 +1,14 @@
+Algorithm pseudocode (need to find the exact registry addresses from datasheet later on)
+
+for windows-usb, usb-ADXXXX microcontroller, mbient-ADXXXX microcontroller, the drivers will implement the following:
+
+read write open close ioctl 
+
+windows-usb, usb-ADxxxx interface: find equivalent functions in the cypress usb programmer's guide:
+i2c_open()
+i2c.open()
+i2c_open()
+i2cOpen(WITH_LOCK)
+i2c.ioctl_changeFrequency(THIRTY_MHz)
+i2cIoctl(kChangeFrequency, THIRTY_MHz)
+
