@@ -4,6 +4,9 @@ for windows-usb, usb-ADXXXX microcontroller, mbient-ADXXXX microcontroller, the 
 
 read write open close ioctl 
 
+I would start with the USB driver for Windows part first as I can find the programmer's guide.
+For mbient, I would start on it first also as the C++ APIs were in that github repo you sent me. 
+
 windows-usb, usb-ADxxxx interface: find equivalent functions in the cypress usb programmer's guide:
 i2c_open()
 i2c.open()
@@ -11,4 +14,10 @@ i2c_open()
 i2cOpen(WITH_LOCK)
 i2c.ioctl_changeFrequency(THIRTY_MHz)
 i2cIoctl(kChangeFrequency, THIRTY_MHz)
+
+
+
+
+
+
 
